@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+    <script src="validate.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <div class="left">
+                    <img class="logo" src="logo-design.jpg" alt="logo">
+                </div>
+                <div class="right">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </div>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <h1 class="h1">Contact Me</h1>
+
+    <p class="contact">Leave Me a Message</p>
+
+    <form action="#" name="myForm" onsubmit="return validateForm()">
+        <label for="firstName" class="label">First Name :</label>
+        <input type="text" name="firstName" placeholder="Your First Name" class="input" id="name"><br>
+
+        <label for="lastName" class="label">Last Name :</label>
+        <input type="text" name="lastName" placeholder="Your Last Name" class="input"><br>
+
+        <label for="email" class="label">Email :</label>
+        <input type="email" name="email" placeholder="Your Email Address" class="input" id="email"><br>
+
+        <label for="country" class="label">Country :</label>
+        <input type="text" name="country" placeholder="Your Country" class="input"><br>
+
+        <label for="subject" class="label">Subject :</label>
+        <textarea name="subject" cols="30" rows="5" placeholder="Your Message to me..." class="textArea"></textarea><br>
+        
+        <input type="submit" value="Submit" class="button">
+    </form>
+
+
+
+</body>
+</html>

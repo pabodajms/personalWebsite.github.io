@@ -1,0 +1,254 @@
+body {
+    margin: 0;
+    background-color: rgb(252, 248, 239, 0.5);
+}
+
+/*HOME PAGE*/
+.heading1 {
+    font-family: 'Qwitcher Grypen', cursive;
+    color: aliceblue;
+    font-size: 70px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-family: 'Qwitcher Grypen', cursive;
+    color: rgb(168, 13, 13);
+    font-size: 60px;
+    text-align: center;
+    margin-top: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    flex: 50%;
+}
+
+li{
+    display: inline;
+    float: right;
+}
+
+li a {
+    display: block;
+    padding: 20px 50px;
+    text-decoration: none;
+    color: rgb(141, 7, 7);
+    text-transform: uppercase;
+}
+
+li a:hover {
+    color: rgb(255, 240, 251);
+    background-color: brown;
+}
+
+
+.logo {
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin: 5px 0 0 15px;
+    padding: 0;
+}
+
+.left {
+    display: flex;
+    justify-content: left;
+    display: inline;
+}
+
+.right {
+    display: flex;
+    justify-content: right;
+}
+
+.intro {
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    border-left: 2px solid red;
+    color: black;
+    margin: 10px 180px;
+    padding: 5px 0;
+}
+
+.row {
+    height: 500px;
+    display: flex;
+    background-image: url(backgroundPic.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+.column {
+    flex: 50%;
+    margin-left: 150px;
+    margin-top: 100px;
+}
+
+.column img {
+    margin-left: 85px;
+    border-radius: 50%;
+    
+}
+
+/*ABOUT PAGE*/
+.row2 {
+    display: flex;
+}
+
+.column2 {
+    position: relative;
+    flex: 33.333%;
+    margin: 5px 0px 20px 10px;
+    padding: 10px 5px;
+    
+}
+
+.image {
+    opacity: 1;
+    display: block;
+    width: 90%;
+    height: 300px;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    border-radius: 10px;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+
+.column2:hover .image {
+    opacity: 0.3;
+}
+  
+.column2:hover .middle {
+    opacity: 1;
+}
+  
+.text {
+    background-color: brown;
+    color: white;
+    font-size: 16px;
+    padding: 10px 30px;
+    border-radius: 5px;
+}
+  
+.column2 h3 {
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+}
+
+.h1 {
+    font-family: 'Qwitcher Grypen', cursive;
+    color: brown;
+    text-align: center;
+    font-size: 65px;
+}
+
+table {
+    border: none;
+    margin-left: 350px;
+    margin-bottom: 50px;
+}
+
+table th {
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+table td {
+    font-family: 'Nunito', sans-serif;
+    border-bottom: 1px grey solid;
+    font-size: 20px;
+    margin: 5px 10px;
+    padding: 7px 20px;
+}
+
+/*SKILLS PAGE*/
+.container {
+    width: 100%;
+    background-color: #ddd;
+}
+
+.skills {
+    text-align: right;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+}
+
+.html {width: 90%; background-color: #04AA6D;}
+.css {width: 80%; background-color: #2196F3;}
+.js {width: 40%; background-color: #f44336;}
+.C {width: 30%; background-color: #808080;}
+
+.skill {
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    text-align: left;
+    border-left: 2px solid red;
+    color: black;
+    margin: 10px 25px;
+    padding: 5px 5px;
+}
+
+/*CONTACT PAGE*/
+
+.contact {
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    text-align: left;
+    border-left: 2px solid red;
+    color: black;
+    margin: 10px 30px;
+    padding: 5px 5px;
+}
+
+form {
+    margin: 10px 100px;
+}
+
+.label {
+    margin: 10px 10px 25px 30px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+}
+
+.input {
+    margin: 10px 10px 25px 30px;
+    padding: 10px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    font-style: italic;
+}
+
+.textArea {
+    margin: 20px 10px 0 30px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    font-style: italic;
+}
+
+.button {
+    margin: 30px 10px 10px 150px;
+    padding: 10px 20px;
+    background-color: brown;
+    color: white;
+    border: none;
+}
